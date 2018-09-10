@@ -6,7 +6,7 @@ try {
   var PACKAGE_JSON = process.cwd() + '/package.json';
   var package = JSON.parse(fs.readFileSync(PACKAGE_JSON));
   var APP_NAME = package.name;
-  var PACKAGE_GRADLE = process.cwd() + '/node_modules/react-native-fetch-blob/android/build.gradle'
+  var PACKAGE_GRADLE = process.cwd() + '/node_modules/@mvbattan/react-native-fetch-blob/android/build.gradle'
   var VERSION = checkVersion();
 
   console.log('RNFetchBlob detected app version => ' + VERSION);
